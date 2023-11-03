@@ -145,7 +145,7 @@ threshold_v = np.vectorize(threshold)
 
 def hysteresis(img: np.ndarray):
     """
-    img: image in with threshole applied
+    img: image with threshole applied
     return: image after applying hysteresis
     """
     result = img.copy()
