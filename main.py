@@ -1,9 +1,6 @@
 from canny import CannyEdgeDetector
-import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-import math
-from scipy import signal
 
 img = cv2.imread('example_inputs/kid.jpg')
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
