@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import math
 from scipy import signal
 
-def CannyEdgeDetector(img: np.ndarray, gaussian_size: int, sigma: int, min_threshold: int, max_threshold:int):
+def CannyEdgeDetector(img: np.ndarray, gaussian_size: int, sigma: int, min_threshold: int, max_threshold: int, faster: bool = 1):
     """
     img: image in RGB/grayscale format
     return: image with borders detected
@@ -16,11 +16,11 @@ def CannyEdgeDetector(img: np.ndarray, gaussian_size: int, sigma: int, min_thres
         grayscale = rgb2grayscale(img=grayscale)
     
     # Apply Gaussian mask
-    blurry = correlation(img=grayscale, filter=gaussianKernel(size=gaussian_size, sigma=sigma), faster=1)
+    blurry = correlation(img=grayscale, filter=gaussianKernel(size=gaussian_size, sigma=sigma), faster=faster)
 
     # Apply Sobel filters
-    gradientX = correlation(img=blurry, filter=sobelFilterX(), faster=1)
-    gradientY = correlation(img=blurry, filter=sobelFilterY(), faster=1)
+    gradientX = correlation(img=blurry, filter=sobelFilterX(), faster=faster)
+    gradientY = correlation(img=blurry, filter=sobelFilterY(), faster=faster)
 
     magnitude = np.sqrt(gradientX**2 + gradientY**2)
     direction = np.arctan2(gradientY, gradientX)
