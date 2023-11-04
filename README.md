@@ -12,6 +12,11 @@ It includes a correlation function which can be used, but I recommend using scip
 
 Input Image:
 
+<img src="https://github.com/javipzv/canny-edge-detector-from-scratch/assets/90279135/6f17c75b-da41-40b7-ab0e-a75b342838d0" width="500" alt="persona">
+
+<br><br>
 Edge-Detected Image:
+
+<img src="https://github.com/javipzv/canny-edge-detector-from-scratch/assets/90279135/97a567bf-a901-4dd2-b720-9790c79045f9" width="500" alt="persona_borders">
 
 
