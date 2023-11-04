@@ -8,7 +8,7 @@ gradient calculation, intensity thresholding, and hysteresis application.
 
 It includes a correlation function which can be used, but I recommend using scipy implementation for faster results.
 
-Google Colab: [https://colab.research.google.com/github/javipzv/canny-edge-detector-from-scratch/blob/main/notebooks/canny-operator-step-by-step.ipynb?hl=es#](https://colab.research.google.com/drive/1DwswQaCyEWSIp-CtqZZM1_y1TwTe5Dh1?hl=es#scrollTo=-a5Nc2DCzW-y)
+Google Colab: https://colab.research.google.com/drive/1DwswQaCyEWSIp-CtqZZM1_y1TwTe5Dh1?usp=sharing
 
 # Example
 
